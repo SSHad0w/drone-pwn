@@ -1,0 +1,22 @@
+# Nmap 7.91 scan initiated Fri Apr  9 02:33:09 2021 as: nmap -A -O -sS -sC -sV -p 9999 -oN drone_scan6.txt 192.168.10.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.10.1
+Host is up (0.0014s latency).
+
+PORT     STATE SERVICE VERSION
+9999/tcp open  abyss?
+MAC Address: 60:60:1F:59:26:17 (SZ DJI Technology)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: media device|specialized|general purpose|VoIP phone
+Running (JUST GUESSING): Smart Electronic embedded (93%), Ocean Signal embedded (92%), lwIP 1.4.X (92%), Rigol Technologies embedded (92%), Enlogic embedded (91%), DTE embedded (91%), Espressif embedded (91%), Grandstream embedded (91%)
+OS CPE: cpe:/a:lwip_project:lwip cpe:/h:rigol_technologies:dsg3060 cpe:/h:grandstream:gxp1105 cpe:/a:lwip_project:lwip:1.4.0
+Aggressive OS guesses: Smart Mirage CX06 satellite receiver (93%), Ocean Signal E101V emergency beacon (FreeRTOS/lwIP) (92%), Rigol DSG3060 signal generator (92%), Enlogic PDU (FreeRTOS/lwIP) (91%), DTE Energy Bridge (lwIP stack) (91%), Espressif esp8266 firmware (lwIP stack) (91%), Grandstream GXP1105 VoIP phone (91%), lwIP 1.4.0 lightweight TCP/IP stack (91%), NodeMCU firmware (lwIP stack) (91%), Philips Hue Bridge (lwIP stack v1.4.0) (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.40 ms 192.168.10.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr  9 02:36:04 2021 -- 1 IP address (1 host up) scanned in 175.13 seconds

@@ -1,0 +1,10 @@
+# Nmap 7.91 scan initiated Fri Apr  9 02:04:55 2021 as: nmap -A -p 9999 -oN drone_scan3.txt 192.168.10.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.10.1
+Host is up (0.0017s latency).
+
+PORT     STATE SERVICE    VERSION
+9999/tcp open  tcpwrapped
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr  9 02:05:02 2021 -- 1 IP address (1 host up) scanned in 7.35 seconds

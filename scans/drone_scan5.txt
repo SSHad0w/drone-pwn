@@ -1,0 +1,29 @@
+# Nmap 7.91 scan initiated Fri Apr  9 02:20:13 2021 as: nmap -A -O -sS -sC -sV -p- -oN drone_scan5.txt 192.168.10.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.10.1
+Host is up (0.0015s latency).
+Not shown: 65534 closed ports
+PORT     STATE SERVICE VERSION
+9999/tcp open  abyss?
+MAC Address: 60:60:1F:59:26:17 (SZ DJI Technology)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=4/9%OT=9999%CT=1%CU=31987%PV=Y%DS=1%DC=D%G=Y%M=60601F%
+OS:TM=606FF305%P=x86_64-pc-linux-gnu)SEQ(SP=15%GCD=1%ISR=5B%II=RI%TS=U)SEQ(
+OS:SP=0%GCD=109%ISR=5B%CI=I%II=RI%TS=U)OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%
+OS:O5=M5B4%O6=M5B4)WIN(W1=558C%W2=558C%W3=558C%W4=558C%W5=558C%W6=558C)ECN(
+OS:R=Y%DF=N%T=FF%W=558C%O=M5B4%CC=N%Q=)T1(R=Y%DF=N%T=FF%S=O%A=S+%F=AS%RD=0%
+OS:Q=)T2(R=N)T3(R=Y%DF=N%T=FF%W=558C%S=O%A=S+%F=AS%O=M5B4%RD=0%Q=)T4(R=Y%DF
+OS:=N%T=FF%W=558C%S=A%A=S%F=AR%O=%RD=0%Q=)T5(R=Y%DF=N%T=FF%W=558C%S=A%A=S+%
+OS:F=AR%O=%RD=0%Q=)T6(R=Y%DF=N%T=FF%W=558C%S=A%A=S%F=AR%O=%RD=0%Q=)T7(R=Y%D
+OS:F=N%T=FF%W=558C%S=A%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=FF%IPL=38%UN=0%RI
+OS:PL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=FF%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.46 ms 192.168.10.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr  9 02:24:05 2021 -- 1 IP address (1 host up) scanned in 232.17 seconds

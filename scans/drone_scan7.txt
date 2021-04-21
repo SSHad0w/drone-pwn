@@ -1,0 +1,32 @@
+# Nmap 7.91 scan initiated Fri Apr 16 04:00:32 2021 as: nmap -A -O -sS -sC -sV -sU -p- -oN drone_scan7.txt 192.168.10.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Got nsock WRITE error #101 (Network is unreachable)
+Got nsock WRITE error #101 (Network is unreachable)
+Got nsock WRITE error #101 (Network is unreachable)
+send_ip_packet in send_closedudp_probe: Network is unreachable (101)
+send_ip_packet in send_closedudp_probe: Network is unreachable (101)
+send_ip_packet in send_closedudp_probe: Network is unreachable (101)
+send_ip_packet in send_closedudp_probe: Network is unreachable (101)
+Nmap scan report for 192.168.10.1
+Host is up (0.0091s latency).
+Not shown: 131066 closed ports
+PORT      STATE         SERVICE   VERSION
+9999/tcp  open          abyss?
+67/udp    open|filtered dhcps
+8889/udp  open|filtered ddi-udp-2
+62510/udp open|filtered unknown
+MAC Address: 60:60:1F:FC:8F:A2 (SZ DJI Technology)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=4/16%OT=9999%CT=1%CU=1%PV=Y%DS=1%DC=D%G=Y%M=60601F%TM=
+OS:60794508%P=x86_64-pc-linux-gnu)ECN(R=N)T1(R=N)T2(R=N)T3(R=N)T4(R=N)T5(R=
+OS:N)T6(R=N)T7(R=N)U1(R=N)IE(R=N)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   9.10 ms 192.168.10.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr 16 04:04:24 2021 -- 1 IP address (1 host up) scanned in 232.09 seconds

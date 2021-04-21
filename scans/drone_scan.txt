@@ -1,0 +1,18 @@
+# Nmap 7.91 scan initiated Thu Apr  8 23:21:16 2021 as: nmap -vvv -Pn -sV -p- -oN drone_scan.txt 192.168.10.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.10.1
+Host is up, received user-set (0.0021s latency).
+Scanned at 2021-04-08 23:21:16 EDT for 53s
+Not shown: 65534 closed ports
+Reason: 65534 conn-refused
+PORT     STATE SERVICE    REASON  VERSION
+9999/tcp open  tcpwrapped syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr  8 23:22:09 2021 -- 1 IP address (1 host up) scanned in 53.89 seconds
+
+
+
+
+nmap 192.168.10.1 -vvv -Pn -sV -p- -oN drone_scan.txt

@@ -1,0 +1,21 @@
+# Nmap 7.91 scan initiated Fri Apr  9 02:05:30 2021 as: nmap -A -O -sS -sC -p 9999 -oN drone_scan4.txt 192.168.10.1
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.10.1
+Host is up (0.0010s latency).
+
+PORT     STATE SERVICE VERSION
+9999/tcp open  abyss?
+MAC Address: 60:60:1F:59:26:17 (SZ DJI Technology)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|phone
+Running: Linux 2.4.X|2.6.X, Sony Ericsson embedded
+OS CPE: cpe:/o:linux:linux_kernel:2.4.20 cpe:/o:linux:linux_kernel:2.6.22 cpe:/h:sonyericsson:u8i_vivaz
+OS details: Tomato 1.28 (Linux 2.4.20), Tomato firmware (Linux 2.6.22), Sony Ericsson U8i Vivaz mobile phone
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.03 ms 192.168.10.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr  9 02:06:53 2021 -- 1 IP address (1 host up) scanned in 82.76 seconds
