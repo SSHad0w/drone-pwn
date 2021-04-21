@@ -1,3 +1,13 @@
+# THIS SCRIPT IS NOT YET WORKING
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #
 # Tello Python3 Control Demo 
 #
@@ -11,7 +21,7 @@ import sys
 import time
 import platform  
 
-host = '0.0.0.0'
+host = '127.0.0.1'
 port = 8890
 locaddr = (host,port) 
 
@@ -19,7 +29,7 @@ locaddr = (host,port)
 # Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-tello_address = ('192.168.10.1', 8889)
+tello_address = (host, 8889)
 
 sock.bind(locaddr)
 
@@ -28,7 +38,7 @@ def recv():
     while True: 
         try:
             data, server = sock.recvfrom(1518)
-            print(data.decode(encoding=utf-8))
+            print(data.decode(encoding='UTF-8',errors='strict'))
         except Exception:
             print ('\nExit . . .\n')
             break
@@ -64,7 +74,7 @@ while True:
             break
 
         # Send data
-        msg = msg.encode(encoding=utf-8) 
+        msg = msg.encode(encoding='UTF-8',errors='strict') 
         sent = sock.sendto(msg, tello_address)
     except KeyboardInterrupt:
         print ('\n . . .\n')
