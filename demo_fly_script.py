@@ -49,7 +49,7 @@ def main():
  
     takeoff(s)
 
-    flyfoward(s)
+    flyforward(s)
  
     rotate90(s)
  
