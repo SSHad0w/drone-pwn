@@ -69,7 +69,7 @@ def recv():
         try:
             data, server = SOK.recvfrom(3000)
             #decode and print response from drone
-            print(data.decode(encoding='ascii'))
+            print(data.decode('ascii'))
         except socket.error as exc:
                 print ("Caught exception socket.error : %s" % exc)
 
@@ -83,7 +83,8 @@ def main():
 
         cmd = input('D R O N E >> ')
         if cmd == 'exit':
-            SOK.close()
+            break
+            exit(0)
         elif cmd =='help':
             help()
         else:
