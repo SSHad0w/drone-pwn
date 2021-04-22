@@ -10,7 +10,7 @@ LOCADDR = (host, port)
 TELLOCMD = ('192.168.10.1', 8889)
 TELLOST = ('192.168.10.1', 8890)
 TELLOSTR = ('192.168.10.1', 11111)
-SLEEP_TIME = 3
+SLEEP_TIME = 4.5
 SOK = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 def init_drone():
