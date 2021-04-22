@@ -1,31 +1,39 @@
 import socket
 import time
+import sys
+import threading
 
+
+host = ''
+port = 9000
+LOCADDR = (host, port)
 TELLOCMD = ('192.168.10.1', 8889)
 TELLOST = ('192.168.10.1', 8890)
 TELLOSTR = ('192.168.10.1', 11111)
-SLEEP_TIME = 4.5
+SLEEP_TIME = 3
+SOK = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 def init_drone():
+
     print('==> Connecting to Drone...')
 
-    # create UDP client on PC
-    try:
-        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    except socket.error as err:
-        print('==> Connection Failed - Socket Error:')
-        print(err)
-        exit()
+    #create UDP client on PC
+    SOK.bind(LOCADDR)
+    #display port on the local address the socket binded to 
+    print('socket binded to: ', port)
+    
 
     try:
-        # send control commands to the drone
-        s.sendto(b'command', TELLOCMD)
+        SOK.sendto(b'command', TELLOCMD)
         time.sleep(SLEEP_TIME)
     except socket.error as err:
         print(err)
 
+    recvThread = threading.Thread(target=recv)
+    recvThread.start()
+
     print('==> Connection Established')
-    return s
+
 
 # list of commands for drone
 def help():
@@ -54,25 +62,32 @@ def help():
 
         * - use with caution''')
 
+#receive method to receive the repsonse from the drone
+def recv():
+
+    while True: 
+        try:
+            data, server = SOK.recvfrom(3000)
+            #decode and print response from drone
+            print(data.decode(encoding='ascii'))
+        except socket.error as exc:
+                print ("Caught exception socket.error : %s" % exc)
+
+
 def main():
     # Establish socket connection
-    skt = init_drone()
+    init_drone()
 
     # Main Loop
     while True:
 
         cmd = input('D R O N E >> ')
-        if cmd == '' or cmd == 'exit':
-            break
+        if cmd == 'exit':
+            SOK.close()
         elif cmd =='help':
             help()
- #  test for state commands on port 8890
- #       elif cmd == 'h': 
- #           skt.sendto(cmd.encode('ascii'), TELLOST)
- #           time.sleep(SLEEP_TIME)
- #           print('<== Sent')
         else:
-            skt.sendto(cmd.encode('ascii'), TELLOCMD)
+            SOK.sendto(cmd.encode('ascii'), TELLOCMD)
             time.sleep(SLEEP_TIME)
             print('<== Sent')
  
