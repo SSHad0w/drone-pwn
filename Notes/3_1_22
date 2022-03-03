@@ -1,0 +1,1 @@
+We have working code that parses the nmap fingerprint, and now we want to convert each escaped hexidecimal string to traditional ascii.
