@@ -1,0 +1,3 @@
+## Adding new functionality to the parser
+
+We still want to be able to read and analyze the escaped hexadecimal strings to see if we have any important information from the services we didn't recognize, So we will make a separate script to convert the hex into strings and eventually merge it into the parser as one big program.
