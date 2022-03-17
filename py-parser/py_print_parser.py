@@ -1,6 +1,6 @@
 # nmap unknown fingerprint parser
 # SSHad0w
-# Version 1.0
+# Version 1.1
 
 import argparse
 # I need a cooler name. NUSVFP FUNSVP 
