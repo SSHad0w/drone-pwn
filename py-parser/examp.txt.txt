@@ -1,8 +1,0 @@
-Days of the Week
-0000onday
-Tuesday
-Wednesday
-Thursday
-Friday
-Saturday
-Sunday
