@@ -10,11 +10,11 @@
 
 `git remote add origin https://github.com/SSHAD0w/drone-pwn/`
 
-`git push https://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@github.com/SSHAD0w/drone-pwn.git`
+`git push https://[token]@github.com/SSHAD0w/drone-pwn.git`
 
 ![a60cc8ba0bfc0660f40d61b0421cf3f9.png](../../_resources/a60cc8ba0bfc0660f40d61b0421cf3f9.png)
 
-`git pull https://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@github.com/SSHAD0w/drone-pwn.git`
+`git pull https://[token]@github.com/SSHAD0w/drone-pwn.git`
 
 
 ![e3a986f7ad7d6c8ab897487c30bf1c3d.png](../../_resources/e3a986f7ad7d6c8ab897487c30bf1c3d.png)
@@ -25,7 +25,7 @@
 
 [Doesn't work]
 
-` git pull https://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@github.com/SSHAD0w/drone-pwn.git main`
+` git pull https://[token]@github.com/SSHAD0w/drone-pwn.git main`
 
 Throws an error:
 
@@ -37,7 +37,7 @@ fatal: refusing to merge unrelated histories
 
 [This should help.](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
 
-`git pull https://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@github.com/SSHAD0w/drone-pwn.git main --allow-unrelated-histories`
+`git pull https://[token]@github.com/SSHAD0w/drone-pwn.git main --allow-unrelated-histories`
 
 ```
 From https://github.com/SSHAD0w/drone-pwn
@@ -50,7 +50,7 @@ Seems like it worked.
 
 Now that the pull is finished. I can push. (Hopefully.)
 
-`git remote add origin3 https://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@github.com/SSHAD0w/drone-pwn.git
+`git remote add origin3 https://[token]@github.com/SSHAD0w/drone-pwn.git
 `
 
 
@@ -98,4 +98,4 @@ I'm glad I made backups.
 # Now I know that I should never use the -f flag.
 
 
-Just as I created a backup with `git pull https://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@github.com/SSHAD0w/drone-pwn.git main` on a different machine, I will restore the backup using 
+Just as I created a backup with `git pull https://[token]@github.com/SSHAD0w/drone-pwn.git main` on a different machine, I will restore the backup using 
