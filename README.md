@@ -5,8 +5,8 @@ Flying router hacking
 [Github](https://github.com/SSHAD0w/drone-pwn)
 
 ## Demo Video:
-
-<video src='(https://www.youtube.com/embed/fZ6wzsciTns?si=hTvNUfNdbO9ugA2b)' width=180/>
+https://www.youtube.com/watch?v=fZ6wzsciTns
+[![Drone-pwn-video](https://www.youtube.com/watch?v=fZ6wzsciTns))](https://www.youtube.com/watch?v=fZ6wzsciTns)
 
 ## What we know
 - Nothing, but that's okay
