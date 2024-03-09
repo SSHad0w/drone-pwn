@@ -6,7 +6,7 @@ Flying router hacking
 
 ## Demo Video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fZ6wzsciTns?si=hTvNUfNdbO9ugA2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<video src='(https://www.youtube.com/embed/fZ6wzsciTns?si=hTvNUfNdbO9ugA2b)' width=180/>
 
 ## What we know
 - Nothing, but that's okay
