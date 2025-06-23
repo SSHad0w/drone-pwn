@@ -36,7 +36,7 @@ def init_drone():
     except socket.error as err:
         print(err)
 
-    recvThread = threading.Thread(target=recv)
+    recvThread = threading.Thread(target=recv, daemon=True)
     recvThread.start()
 
     print('==> Connection Established')
@@ -93,7 +93,7 @@ def main():
 
         cmd = input('D R O N E >> ')
         if cmd == 'exit':
-            break
+            print('==> Exiting ...')
             exit(0)
         elif cmd =='help':
             help()
