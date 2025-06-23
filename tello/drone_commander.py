@@ -3,15 +3,27 @@ import time
 import sys
 import threading
 import argparse
-
+import random
 host = ''
+
 port = 9000
 LOCADDR = (host, port)
 TELLOCMD = ('192.168.10.1', 8889)
 TELLOST = ('192.168.10.1', 8890)
 TELLOSTR = ('192.168.10.1', 11111)
-SLEEP_TIME = 4.5
+SLEEP_TIME = 2.5
 SOK = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+banner = """
+ _______                                                _______                         
+/       \\                                              /       \\                        
+$$$$$$$  |  ______   ______   _______    ______        $$$$$$$  |__   __   __  _______  
+$$ |  $$ | /      \\ /      \\ /       \\  /      \\       $$ |__$$ /  | /  | /  |/       \\ 
+$$ |  $$ |/$$$$$$  /$$$$$$  |$$$$$$$  |/$$$$$$  |      $$    $$/$$ | $$ | $$ |$$$$$$$  |
+$$ |  $$ |$$ |  $$/$$ |  $$ |$$ |  $$ |$$    $$ |      $$$$$$$/ $$ | $$ | $$ |$$ |  $$ |
+$$ |__$$ |$$ |     $$ \\__$$ |$$ |  $$ |$$$$$$$$/       $$ |     $$ \\_$$ \\_$$ |$$ |  $$ |
+$$    $$/ $$ |     $$    $$/ $$ |  $$ |$$       |      $$ |     $$   $$   $$/ $$ |  $$ |
+$$$$$$$/  $$/       $$$$$$/  $$/   $$/  $$$$$$$/       $$/       $$$$$/$$$$/  $$/   $$/ 
+"""
 
 
 def parse_args():
@@ -19,6 +31,8 @@ def parse_args():
     parser.add_argument("-helpme", "--helpme", type=str, metavar="", required=False, help="help menu")
     
     parser.parse_args()
+
+
 
 def init_drone():
 
@@ -82,7 +96,7 @@ def recv():
 
 
 def main():
-
+    print(banner)
     args = parse_args()
 
     # Establish socket connection
